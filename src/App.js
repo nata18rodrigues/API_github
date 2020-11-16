@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react';
+import api from './api';
+import ReactRouter,{ Redirect } from 'react-router';
+import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+import Login from './componentes/Login';
+import Mostrar from './componentes/Mostrar';
+ 
+
+
+function App() {   
+  return ( <div>
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/" component={Login} />
+        <Route exact path="/Login" component={Login} />
+        <Route exact path="/Mostrar/:user" component={Mostrar} />
+      </Switch>
+    </BrowserRouter>
     </div>
   );
 }
 
 export default App;
+
+//https://api.github.com/users/nata18rodrigues
