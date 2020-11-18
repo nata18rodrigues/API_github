@@ -15,19 +15,23 @@ function Mostrar(props) {
   return (
     <div>
       {userName.map((item) => {
+        if(item){
         return (
-          <text key={item.user}>
-            <text>login: {item.login}</text> <br />{" "}
-            <text>idNumber:{item.id}</text> <br />{" "}
-            <text>
-              public_repos:{item.public_repos ? item.public_repos : "0"}
-            </text>
-          </text>
+          <div key={item.user} class="control">
+            <div class="imgcube">
+              <img class="b" src={item.avatar_url} alt=""></img>
+            </div>
+            <div class="cube" >
+              login: {item.login} <br />
+              idNumber:{item.id} <br />
+              public_repos:{item.public_repos ? item.public_repos : "0"}<br />
+              <br/>
+              <h5><Link to="/Login">nova pesquisa</Link></h5>
+            </div>
+          </div>
         );
-      })}
-      <h5>
-        <Link to="/Login">nova Pesquisa</Link>
-      </h5>
+     } })}
+      
     </div>
   );
 }

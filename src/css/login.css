@@ -1,0 +1,71 @@
+div.results{
+    padding-left: 8em;
+}
+div.box {
+  width: 40%;
+  height: 2em;
+  padding: 0.6em;
+  border: 0.1em solid rgb(64, 64, 64);
+  margin: 0;
+  font-size: 1.2em;
+  padding-left: 3em;  
+}
+
+h5 {
+    font-size: 0.7em;
+}
+
+br {
+  content: "A" !important;
+  display: block !important;
+  margin-bottom: 0.2em !important;
+}
+input[type=text], select {
+    width: 30%;
+    padding: 0.6em 1.1em;
+    margin: 0.4em 0;
+    border: 0.05em solid #ccc;
+    border-radius: 0.2em;
+    box-sizing: border-box;
+}
+button {
+    background-color: #646464;
+    padding: 0.6em 1.1em;
+}
+img.a {
+    width:2.5em;
+    height:2.5em;
+}
+img.b {
+    width:5.5em;
+    height:5.5em;
+}
+div.cube{
+    float:left;
+    top:0px;
+    width:80%;
+    position:absolute;
+    right:0em;
+    height: 6em;
+    text-align: left;
+}
+
+div.imgcube {
+    float:left;
+    top:0px;
+    width:20%;
+    position:absolute;
+    left:0em;
+    height: 6em; 
+    padding-left: 5em;  
+}
+div.control {
+    position:fixed;
+    width: 100%;
+    height: 6em;
+    padding: 1em;
+    margin: 0;
+    font-size: 1.2em;
+    padding-left: 5em;   
+}
+
